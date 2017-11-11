@@ -1,0 +1,25 @@
+apply plugin: 'kotlin'
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    def dataDependencies = rootProject.ext.dataDependencies
+    def dataTestDependencies = rootProject.ext.dataTestDependencies
+
+    compile project(':domain')
+
+    compile dataDependencies.javaxAnnotation
+
+    implementation dataDependencies.kotlin
+    implementation dataDependencies.javaxInject
+    implementation dataDependencies.rxKotlin
+    implementation dataDependencies.jodaTime
+
+    testImplementation dataTestDependencies.jUnit
+    testImplementation dataTestDependencies.kotlinJUnit
+    testImplementation dataTestDependencies.mockito
+    testImplementation dataTestDependencies.assertJ
+}
+

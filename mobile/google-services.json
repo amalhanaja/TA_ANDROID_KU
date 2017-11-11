@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "417198418203",
+    "firebase_url": "https://tugasakhirsani.firebaseio.com",
+    "project_id": "tugasakhirsani",
+    "storage_bucket": "tugasakhirsani.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417198418203:android:5adde1ca9e4f4013",
+        "android_client_info": {
+          "package_name": "com.amalhanaja.sani.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417198418203-019r6g49ugg7gis1nrjkhku3p7u81tuc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.amalhanaja.sani.mobile",
+            "certificate_hash": "85bdd2c51e86fe642c6541af97494a6593593cd1"
+          }
+        },
+        {
+          "client_id": "417198418203-cmcaotco9hq4otco2l92mmck10u93rqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGmwYdkn3rSiRtjwm19r2I-2uV3lqksp8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417198418203-cmcaotco9hq4otco2l92mmck10u93rqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

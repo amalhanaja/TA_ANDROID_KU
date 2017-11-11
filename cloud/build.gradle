@@ -1,0 +1,31 @@
+apply plugin: 'kotlin'
+
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    def cloudDependencies = rootProject.ext.cloudDependencies
+    def cloudTestDependencies = rootProject.ext.cloudTestDependencies
+
+    implementation cloudDependencies.javaxAnnotation
+
+    implementation cloudDependencies.kotlin
+    implementation cloudDependencies.javaxInject
+    implementation cloudDependencies.rxKotlin
+    implementation cloudDependencies.moshi
+    implementation cloudDependencies.moshiKotlin
+    implementation cloudDependencies.okHttp
+    implementation cloudDependencies.okHttpLogger
+    implementation cloudDependencies.retrofit
+    implementation cloudDependencies.retrofitConverter
+    implementation cloudDependencies.retrofitAdapter
+
+    testImplementation cloudTestDependencies.jUnit
+    testImplementation cloudTestDependencies.kotlinJUnit
+    testImplementation cloudTestDependencies.mockito
+    testImplementation cloudTestDependencies.assertJ
+
+    compile project(':data')
+}
+
