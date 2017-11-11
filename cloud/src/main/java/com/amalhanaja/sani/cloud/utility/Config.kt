@@ -13,10 +13,10 @@ import retrofit2.converter.moshi.MoshiConverterFactory
  */
 object Config {
     object BaseUrl {
-        val DEVICE = "http://192.168.1.18:5005/"
-        val USER = "http://192.168.1.18:5002/"
-        val TOKEN = "http://192.168.1.18:5002/"
-        val DRIVER = "http://192.168.1.72:5001/"
+        val DEVICE = "http://192.168.1.14:5005/"
+        val USER = "http://192.168.1.14:5002/"
+        val TOKEN = "http://192.168.1.14:5002/"
+        val DRIVER = "http://192.168.1.14:5001/"
     }
     object HttpClient {
         val DEFAULT: (Boolean) -> OkHttpClient = { isDebug: Boolean ->

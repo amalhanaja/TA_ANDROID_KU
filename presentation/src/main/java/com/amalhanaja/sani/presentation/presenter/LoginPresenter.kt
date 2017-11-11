@@ -28,11 +28,11 @@ class LoginPresenter
 
     override fun onLogin(username: String, password: String, fcmToken: String) {
         useCase.execute(LoginUseCase.Params.forDriver(username, password, fcmToken))
-                .doOnError {
+                .subscribe({
+                    println("LOGIN SUKSES")
+                }, {
                     it.printStackTrace()
-                }
-                .subscribe {
-                    println("Login Success")
-                }
+                    println(it.message)
+                })
     }
 }
